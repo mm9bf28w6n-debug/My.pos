@@ -51,7 +51,7 @@ with col_goods:
                 code, item = items[i + j]
                 with cols[j]:
                     with st.container(border=True):
-                        st.image(item["img"], use_column_width=True)
+                        st.image(item["img"], use_container_width=True)
                         st.bold(item["name"])
                         st.text(f"ราคา: {item['price']} บาท | เหลือ: {item['stock']} ชิ้น")
                         
